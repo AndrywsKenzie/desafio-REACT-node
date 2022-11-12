@@ -1,5 +1,6 @@
-import React from 'react'
+import React , {useState} from 'react'
 import styled from 'styled-components'
+
 
 const UploadArquivo = styled.div`
     display: flex;
@@ -9,10 +10,19 @@ const UploadArquivo = styled.div`
     height: 70vh;
 `
 
-const Team: React.FunctionComponent = () => {
+
+const Upload: React.FunctionComponent = () => {
     return (
-        <UploadArquivo>Upload de arquvios aqui</UploadArquivo>
+        <UploadArquivo>
+            <div style={{ textAlign: "center" }}>
+            <h5>CSV IMPORT</h5>
+            <form >
+                <input type={"file"} accept={".csv"} />
+                <button>IMPORT CSV</button>
+            </form>
+        </div>         
+        </UploadArquivo>
     )
 }
 
-export default Team
+export default Upload

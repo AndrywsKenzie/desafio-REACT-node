@@ -76,7 +76,8 @@ const Sidebar: React.FunctionComponent = () => {
         <>
             <Navbar>
                 <MenuIconOpen to="#" onClick={showSidebar}>
-                    <FaIcons.FaBars />
+                <p color='white'>Métodos</p>
+                    
                 </MenuIconOpen>
             </Navbar>
 
